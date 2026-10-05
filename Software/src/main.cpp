@@ -93,12 +93,13 @@ void loop()
 
     if (line_direction == -1.0f) {
         direction = orbit(ir.get_direction(), ir.get_strength());
+        // Serial.println("No avoidance");
     } else {
         direction = float_mod(line_direction + 180.0f, 360.0f);
         // Serial.println("Yes avoidance");
     }
-    Serial.print(avoidance.get_direction()); Serial.print("\t");
-    Serial.println(line_direction);
+    // Serial.print(avoidance.get_direction()); Serial.print("\t");
+    // Serial.println(line_direction);
 
 
     // Serial.print("IR VALUES - dir: "); Serial.print(ir.[get_direction());
@@ -108,8 +109,10 @@ void loop()
     float speed;
     if (ir.get_strength() != 0.0f || avoidance.get_direction() != -1.0f) {
         speed = MOVE_SPEED;
+
     } else {
         speed = 0.0f;
+
     }
 
     float correction = -rotationPID.update(heading, 0.0f);
@@ -126,11 +129,11 @@ float orbit(float direction, float strength)
     }
 
     if (direction == 30.0f) {
-        return direction + 20;
+        return direction + 30;
     }
 
     if (direction == 330.0f) {
-        return direction - 20;
+        return direction - 30;
     }
     
 
