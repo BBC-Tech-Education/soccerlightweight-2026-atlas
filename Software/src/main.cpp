@@ -69,7 +69,8 @@ void setup()
     while (!bno.begin(OPERATION_MODE_IMUPLUS)) {
         Serial.println("Compass isn't working");
         delay(1000);
-    }
+    } 
+    // D1D2R2R3
 
     motors.init();
     ir.init();
