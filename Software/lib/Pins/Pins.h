@@ -17,19 +17,22 @@
 
 
 //IR sensor pins
-#define IR0 22
-#define IR1 23
-#define IR2 24 
-#define IR3 25
-#define IR4 26
-#define IR5 27
-#define IR6 28
-#define IR7 29
-#define IR8 30
-#define IR9 31
-#define IR10 32
-#define IR11 33
-
+#define IR0 10
+#define IR1 11
+#define IR2 12 
+#define IR3 13
+#define IR4 14
+#define IR5 16
+#define IR6 17
+#define IR7 18
+#define IR8 19
+#define IR9 20
+#define IR10 21
+#define IR11 22
+#define IR12 23
+#define IR13 24
+#define IR14 23
+#define IR15 24
 
 // Light sensor pins
 #define LS_0 A0
