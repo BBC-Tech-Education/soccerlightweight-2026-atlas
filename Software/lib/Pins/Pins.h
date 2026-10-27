@@ -1,60 +1,59 @@
 #include <Arduino.h>
 
 
-//Motor pins
-#define BR_INA 6
-#define BR_INB 7
-#define BR_EN 5
-#define BL_INA 11
-#define BL_INB 12
-#define BL_EN 13
-#define FR_INA 3
-#define FR_INB 2
-#define FR_EN 4
-#define FL_INA 9
-#define FL_INB 10
-#define FL_EN 8
+// Motor pins
+#define BR_INA 11
+#define BR_INB 10
+#define BR_PWM 9
+#define BL_INA 8
+#define BL_INB 7
+#define BL_PWM 6
+#define FR_INA 5
+#define FR_INB 4
+#define FR_PWM 3
+#define FL_INA 2
+#define FL_INB 1
+#define FL_PWM 0
 
 
-//IR sensor pins
-#define IR0 10
-#define IR1 11
-#define IR2 12 
-#define IR3 13
-#define IR4 14
-#define IR5 16
-#define IR6 17
-#define IR7 18
-#define IR8 19
-#define IR9 20
-#define IR10 21
-#define IR11 22
-#define IR12 23
-#define IR13 24
-#define IR14 23
-#define IR15 24
-
-// Light sensor pins
-#define LS_0 A0
-#define LS_1 A1
-#define LS_2 A2
-#define LS_3 A3
-#define LS_4 A4
-#define LS_5 A5
-#define LS_6 A6
-#define LS_7 A7
-#define LS_8 A8
-#define LS_9 A9
-#define LS_10 A10
-#define LS_11 A11
-#define LS_12 A12
-#define LS_13 A13
-#define LS_14 A14
-#define LS_15 A15
+// IR sensor pins
+#define IR0 17
+#define IR1 16
+#define IR2 15
+#define IR3 14
+#define IR4 13
+#define IR5 41
+#define IR6 40
+#define IR7 39
+#define IR8 38
+#define IR9 37
+#define IR10 36
+#define IR11 35
+#define IR12 34
+#define IR13 33
+#define IR14 31
+#define IR15 32
 
 
-//BNO055 pins
-// VIN to 5V
-// GND to GND
-// SDA to SDA 20
-// SCL to SCL 21
+// MUX pins
+#define A0A 12
+#define A1A 24
+#define A2A 25
+#define A3A 26
+#define DOUT1 23
+#define DOUT2 22
+
+
+// BNO055 pins
+#define SCL 19
+#define SDA 18
+
+
+// Camera pins
+#define RX5 21
+#define TX5 20
+
+
+// HC-05 pins
+#define TXD 28
+#define RXD 29
