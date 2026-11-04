@@ -37,16 +37,16 @@
 
 // MUX pins
 #define A0 17
-#define A1 18
-#define A2 19
-#define A3 20
-#define DOUT1 23
+#define A1 16
+#define A2 15
+#define A3 14
+#define DOUT1 23 
 #define DOUT2 22
 
 
 // BNO055 pins
-#define SCL 16
-#define SDA 15
+#define SCL 19
+#define SDA 18
 
 
 // Camera pins

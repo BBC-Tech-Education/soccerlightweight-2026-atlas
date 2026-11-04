@@ -3,10 +3,10 @@
 
 void Motors::init()
 {
-    br.init(BR_INA, BR_INB, BR_EN);
-    bl.init(BL_INA, BL_INB, BL_EN);
-    fr.init(FR_INA, FR_INB, FR_EN);
-    fl.init(FL_INA, FL_INB, FL_EN);
+    br.init(BR_INA, BR_INB, BR_PWM);
+    bl.init(BL_INA, BL_INB, BL_PWM);
+    fr.init(FR_INA, FR_INB, FR_PWM);
+    fl.init(FL_INA, FL_INB, FL_PWM);
 }
 
 

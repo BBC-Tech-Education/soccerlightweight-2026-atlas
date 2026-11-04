@@ -7,7 +7,8 @@
 #include <Pins.h>
 
 
-#define LS_NUM 16
+#define MUX_NUM 4
+#define LS_NUM 32
 #define LS_BUFFER 200
 
 class LightSensors {
@@ -23,7 +24,12 @@ private:
 
     float direction = -1.0f;
 
-    uint8_t pins[LS_NUM] = {LS_0, LS_1, LS_2, LS_3, LS_4, LS_5, LS_6, LS_7, LS_8, LS_9, LS_10, LS_11, LS_12, LS_13, LS_14, LS_15};
+    const uint8_t addressPins[MUX_NUM] = {17, 16, 15, 14};
+
+    const uint8_t mux1 = 23;
+    const uint8_t mux2 = 22;
+
+
     uint16_t value[LS_NUM] = {0};
     bool on_white[LS_NUM] = {false};
     uint16_t green[LS_NUM] = {0};
