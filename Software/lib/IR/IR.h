@@ -4,7 +4,7 @@
 #include <Pins.h>
 
 
-#define IR_NUM     12
+#define IR_NUM     16
 #define SAMPLE_NUM 100
 
 
@@ -25,7 +25,7 @@ private:
 
     float direction;
     float strength;
-    uint8_t pin[IR_NUM] = {IR0, IR1, IR2, IR3, IR4, IR5, IR6, IR7, IR8, IR9, IR10, IR11};
+    uint8_t pin[IR_NUM] = {IR0, IR1, IR2, IR3, IR4, IR5, IR6, IR7, IR8, IR9, IR10, IR11, IR12, IR13, IR14, IR15};
 };
 
 #endif
